@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/startActivity_background"
+    tools:context=".ui.startscreen.Fragment.SecondFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_fragment_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_80sdp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/addnotes_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Notes to Notebook"
+        android:textSize="@dimen/_24ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/view"
+        android:layout_marginTop="@dimen/_40sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simply create your note and \n add it to your favorite \n notebook"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textColor="#9B9FAA"
+        android:layout_below="@id/addnotes_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/second_bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:text="Next"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_20sdp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/second_bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+</RelativeLayout>

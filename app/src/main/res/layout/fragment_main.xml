@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_10sdp"
+    tools:context=".ui.main.fragment.MainFragment">
+
+    <TextView
+        android:id="@+id/main_fm_tv_brows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Browse"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30ssp" />
+
+    <TextView
+        android:id="@+id/main_fm_tv_notebooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fm_tv_brows"
+        android:text="Note Books"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_fm_tv_notebooks"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Show all"
+        android:textColor="#7B1E58"
+        android:textSize="@dimen/_18ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_fm_rv_notebooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fm_tv_notebooks" />
+
+
+    <ImageView
+        android:id="@+id/main_fm_iv_create_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fm_tv_notebooks"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/create_new_notebook"
+        android:padding="@dimen/_30sdp"
+        android:src="@drawable/circle"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/main_fm_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="gone"
+        android:text="Create new notebook"
+        android:layout_below="@id/main_fm_iv_create_new"/>
+
+    <TextView
+        android:id="@+id/main_fm_tv_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_fm_tv_notebooks"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:text="Notes"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_fm_tv_notes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Show all"
+        android:textColor="#7B1E58"
+        android:textSize="@dimen/_18ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_rv_mainnote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_fm_tv_notes"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_bt_create_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:src="@drawable/baseline_add_24"
+        android:tint="@color/white"
+        app:backgroundTint="#7B1E58"
+        app:fabSize="normal"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>
